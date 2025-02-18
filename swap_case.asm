@@ -130,6 +130,7 @@ is_upper:
     syscall
 
     addi $t1, $t1, 32
+    sb $t1, 0($s1)
 
 
     li $v0, 11
@@ -155,6 +156,7 @@ is_lower:
     syscall
 
     addi $t1, $t1, -32
+    sb $t1, 0($s1)
 
     li $v0, 11
     move $a0, $t1
